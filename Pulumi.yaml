@@ -1,0 +1,10 @@
+name: ${PROJECT}
+description: ${DESCRIPTION}
+runtime: nodejs
+template:
+  description: Generic Pulumi project written in typescript. Uses GTS for formating
+  important: true
+  config:
+    aws:region:
+      description: The AWS region to deploy to
+      default: us-east-1

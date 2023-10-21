@@ -1,0 +1,23 @@
+{
+  "name": "${PROJECT}",
+  "main": "index.ts",
+  "devDependencies": {
+    "@types/node": "^16",
+    "gts": "^5.2.0",
+    "typescript": "~5.2.0"
+  },
+  "dependencies": {
+    "@pulumi/aws": "^5.0.0",
+    "@pulumi/awsx": "^1.0.0",
+    "@pulumi/pulumi": "^3.0.0"
+  },
+  "scripts": {
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "yarn run compile",
+    "pretest": "yarn run compile",
+    "posttest": "yarn run lint"
+  }
+}
